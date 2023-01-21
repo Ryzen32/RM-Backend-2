@@ -14,7 +14,7 @@ calculatorRoute.post("/", authValidator, async (req, res) => {
   }
 });
 
-calculatorRoute.get("/:name", authValidator, async (req, res) => {
+calculatorRoute.get("/calculate", authValidator, async (req, res) => {
   const { user_id } = req.body;
   const { name } = req.params;
 
