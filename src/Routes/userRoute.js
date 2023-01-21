@@ -44,7 +44,7 @@ userRoute.post("/login", authLoginMiddleWare, async (req, res) => {
   }
 });
 
-userRoute.get("/getProfile", authValidator, async (req, res) => {
+userRoute.get("/getprofile", authValidator, async (req, res) => {
   const { user } = req.body;
   try {
     res.send({ msg: "user Data", user: user });
